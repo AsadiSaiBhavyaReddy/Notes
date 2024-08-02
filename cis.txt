@@ -1,0 +1,629 @@
+1---------------
+i am dashboard
+user
+crate user
+user name-our name
+select i want to crate i am user
+custom passwoard-give passwoard
+uncheck the user must crate new passwoard
+next
+click on attact plocy diractly
+search-s3read click on link
+craetae user
+download csv file
+copy account number
+sign out
+ iamuser
+past account number
+---
+iam
+roles
+create role
+---------------------
+BUDGET:-
+billing dashboard
+click budget
+create budgect
+cick-(only this)custmize
+craete
+give budget name
+montly
+give budget-1
+click next
+add an alert threshole-50 in threshold
+email id-saibhavyaasadi@gmail.com
+create
+---------------
+cloud watch search
+click on all alarm
+create alaram 
+click metric
+select usage-aws resourse
+cloudwatch-get metric data select/budget-create budget
+select metric
+static-greater-than-1
+crete a new topcic
+name-alara,email
+create topic
+next
+name -another name
+create alaram
+next-next-create
+go to mail conform subscription 
+go to console and refresh
+-----------------------
+SEARCH-IAM
+user-create user
+username-Bhavya
+pass
+unselect last box
+attach poly
+s3read search
+click
+next
+crate user
+-----------------
+TESTING:
+copy our account number paste anywhere-381361904661
+https://381361904661.signin.aws.amazon.com/console
+signout
+sigin to console
+IAM USER click
+account number copies 
+give username-Bhavya
+pass-Bhavya@3463
+signin
+search s3
+selct it
+create bucket
+buckt name-mybucket
+create bucket-fail because u have give only read permissions
+------------------
+TASK2:
+signout IAM user go to console management sign in root account
+search IAM
+click role
+create role
+use case-EC2
+next
+search-s3fullaccess
+next
+role name-role1
+create role
+policy -s3full
+----------------------------
+search-ec2
+select instalnec
+launch instatnce
+name-machine1
+browser more ami
+select-amazon linux
+browse
+select
+keypair-proced without keypair
+allow hhtp and https
+launch instance
+select view all instance
+instance- down iam role attatch
+--------------------
+search- IAM
+clcik policies
+go to users-remove policies
+go to policies
+crate policy
+click JSON
+copy in telegram code-copy and paste
+next next
+create policy
+search customer manages in filter- select it
+go to action 
+select attach
+ploicy-user selct click attach policy
+----------------
+ec2 search
+instance
+selct machine1
+instancesite slect stop instance
+search-IAM
+select policies
+search custom policy
+select it delete
+give name
+role-role1 delete
+users-delete user
+---------------------
+2------
+search VPC
+create vpc
+vpc only selct
+name-test-vpc
+ipv4-192.168.0.0/16
+no ipv4
+tendancy-default
+create vpc
+-----------------
+go to subnets
+create subnet
+select a vpc-testvpc
+subnet name-public-subnet
+92.168.0.0/16
+ipv4 subnet CIDR block-192.168.1.0/24
+create subnet
+side-internet gateway
+create internet gateway
+name-internet-gateway
+create
+action-attach to vpc
+select-attach internet gateway
+route tabe
+create routing table name-public-RT
+slect test vpc
+create routing table
+go to edit routes
+add route
+search icon-select 1st
+0.0.0.0/0
+side sleect-internet gateway-create
+save changes
+click on subnet association
+edit subneta ssosisation
+
+in routes table seee
+------------------------------------------------------------
+26/12/23-LAB3
+ec2
+instance
+launch instance
+name-machine
+browse
+select free tier-select
+key-without key
+In Network settings  make sure Auto-assign public IP Info
+(Enable)
+-Allow HTTPS traffic from the internet
+To set up an endpoint, for example when creating a web server
+Allow HTTP traffic from the internet
+To set up an endpoint, for example when creating a web server 
+select above boxes both
+launch instance
+search google-free css templates 
+https://www.free-css.com/free-css-templates
+https://www.free-css.com/free-css-templates/page295/kider
+copy link at download 
+and go to console and machine side numbers them click 2 times connect 
+another bowser popups
+open the telegram document lab3 for linux comands
+slect one one from document and paste them in the new console or websit popup bird
+-----------------------------------------
+Linux Commands:-
+sudo su -
+yum update -y
+yum install -y httpd
+systemctl status httpd
+mkdir temp
+cd temp 
+Wget https://www.free-css.com/assets/files/free-css-templates/download/page295/kider.zip 
+ls
+unzip kider.zip
+cd preschool-website-template
+mv * /var/www/html
+systemctl enable httpd
+systemctl start httpd 
+---------------------------------------------------
+wget https://www.free-css.com/assets/files/free-css-templates/download/page295/kider.zip 
+after all comands
+go to instance-there 2/2 instance then create
+then go the machine side number thrn copy public ip address-rigth colum box and paste in the new tab of browser websit opens
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LAB3-DOCUMNET
+Practical-3:
+Launch EC2 machine and deploy the application on EC2
+EC2 Instance Launch
+1.	Launch Instance
+2.	Configure the following: 
+		Machine Name
+	AMI: Linux (Free Tier)
+	Instance Type: t2.micro
+	Keypair: Not Required
+	VPC: Custom VPC( test-VPC) & Auto assign public IP: Enable
+	Security Group: HTTP & HTTPs enable
+Linux Commands
+sudo su -
+yum update -y
+yum install -y httpd
+systemctl status httpd
+mkdir temp
+cd temp 
+Wget https://www.free-css.com/assets/files/free-css-templates/download/page295/kider.zip 
+ls
+unzip kider.zip
+cd preschool-website-template
+mv * /var/www/html
+systemctl enable httpd
+systemctl start httpd 
+
+testing
+Keep the Public IP address (Eg: https:172.89.23.1) in the Browser tab. Now the website is deployed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+terminate-go to instance select the box of the macing and in actions select instance them give the Successfully stopped.
+---------------------------------------------------
+2/1/24--------
+TASK4:-
+search s3
+bucket 
+Create bucket
+name--aws-2022-today
+buket versoning-enable
+create
+download file in telgram sample with name sample.html
+SAMPLE HTML:-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body bgcolor="yellow">
+<h1>Welcome to AWS Class</h1>
+</body>
+</html>
+
+clIck on bucket name 
+and upload the file-add file-add sample.html file
+upload
+go to browser and duplicate the current tab
+In duplicate web search cloudfront-distribution
+create clod distributions
+origin our bucket name
+click legacy access identies
+create new OAI 
+click create
+(select update bucket policy)
+enable security
+and create destribution
+in the cloudfont page copy the -Distribution domain name and past in another tab
+wait untill the deploy keep refreshing and the scrren appears
+--------------------------
+dlete the sdistribution
+for bucket first delete sample file
+select the empty and next delete the bucket
+-------------------------------------------------------------------------
+TASK2:-
+search VPC
+create VPC
+select VPC only 
+name-test-vpc
+IPv4 CIDR-192.168.0.0/16
+create
+subnets
+Create
+select now created VPC
+name-public-subnet
+IPv4 subnet CIDR block-192.168.1.0/24
+Create
+Internet Gateways
+Create Internet Gateways
+Name-igw1
+Create
+Attach to VPC
+Our Vpc
+Route tabels
+Create Route Tables
+Name-public RT1
+Select VPC-our VPC
+Edit Routes-In Route Tables
+Add Route-0.0.0.0/0
+Side-Internet Gateway->Down-select-iwg1(Our Internet Gateway that we created)
+Route Table-Subnet Assosiation-Edit Subnet Assosiation-1
+Select the box there for out=r Subnet and click Save Assosiation 
+Duplicate the current tab
+Search in duplicate tab EC2
+Instance
+Launch Instance
+name-machine1
+Browse more  AIMs
+Select 1st
+Key paie-Proceed without a key pair
+Network settings-Edit-VPC-Our VPC
+Auto assign pubic IP: Enable
+Add security group rule
+Type-HTTPS
+Source Type:-Anywhere
+Add security group rule
+Type-HTTPS
+Source Type:-Anywhere
+Scroll down in white space add
+#! /bin/bash
+sudo yum update -y
+sudo yum install -y httpd.x86_64
+sudo service httpd start
+sudo service httpd enable
+echo "<h1>Welcome to AWS class</h1>" | sudo tee /var/www/html/index.html
+Launch Instance
+After uploding
+Go to Instance
+Refresh utill page occurs
+And our Instance working 
+copy  Public IPV4 address copy
+Paste it in another tabe 
+OUTPUT:-Shows the screen with white background and with the words Welcome to AWS class
+-----------------------------------
+9/1/24:-
+Search EC2 Instance
+Launch Instance
+name-machine1
+select free tyre account
+Instance type-t2.micro
+Key pair name - required-Proceed without a key pair (Not recommended)
+uncheck- Allow SSH traffic from
+check-Allow HTTPS traffic from the internet
+check-Allow HTTP traffic from the internet
+'launch-wizard-2-remeber
+click advance details
+#! /bin/bash
+sudo yum update -y
+sudo yum install -y httpd.x86_64
+sudo service httpd start
+sudo service httpd enable
+echo "<h1>Welcome to AWS class-machine1</h1>" | sudo tee /var/www/html/index.html
+create instance
+view all instance
+--------------
+AGAIN
+Launch Instance
+name-machine2
+select free tyre account
+Instance type-t2.micro
+Key pair name - required-Proceed without a key pair (Not recommended)
+launch-wizard-3-REMEBER
+O Select existing security group
+Common security groups Info
+Select security groups
+launch-wizard-2 sg-08cd367738a3e4284 X
+In advance  details
+#! /bin/bash
+sudo yum update -y
+sudo yum install -y httpd.x86_64
+sudo service httpd start
+sudo service httpd enable
+echo "<h1>Welcome to AWS class-machine2</h1>" | sudo tee /var/www/html/index.html
+create instance
+view all instance
+-------------
+click load balancer
+create
+Application Load Balancer
+Create
+name-LB1
+In Mapping select all
+Security groups-launch-wizard-2(select same as the machine 2 security groups)
+In Listeners and routing
+Create target group
+name-Group1
+Create
+there our instane select -slect both and select the include and next see target created or not 
+go back and slect the in Listeners and routing refrest the group then our Group 1appears slect it 
+create
+laod balancer-slect LB1 and down DNS nem copy paste in the browser for output:-Welcome to AWS class-machine2
+-------------
+search EC2
+launch templates
+Launch templates
+name-template1
+select linux free tier account
+Instance type-t2.micro
+key piair-Don't include in launch template
+Common security groups Info
+Select security groups
+launch-wizard-2 sg-08cd367738a3e4284 X
+In advance  details
+#! /bin/bash
+sudo yum update -y
+sudo yum install -y httpd.x86_64
+sudo service httpd start
+sudo service httpd enable
+echo "<h1>Welcome to AWS class-machine3&4</h1>" | sudo tee /var/www/html/index.html
+create instance
+view all instance
+---------------
+create autoscallng
+create
+name-autoscale1
+tempalte -we created
+next
+network-select all
+next
+load balancing-Attach to an existing load balancer
+Select target groups-Groupl 
+next
+Desired capacity-2
+Min desired capacity-2,Max desired capacity-2
+ALL next's
+Create autoscalling
+--------------
+go to Target groups
+laod balancer-slect LB1 and down DNS nem copy paste in the browser for output:-Welcome to AWS class-machine3&4 refresh
+
+--------
+auto scalling
+load balance 
+target group
+templates
+-----------------------------
+23/1/24-LAB5
+SEARCH S3
+craete bucket
+name:-bucket1603
+in object ownership- select-ACLs enabled
+in Block Public Access settings for this bucket unclick the Block all public access
+select the yellow box below 
+ down one bucket versoning -enable
+create bucket
+search lambda
+create function
+name-function1
+code-python3.8
+Change default execution role-Create a new role from AWS policy templates
+Role name-s3readonly
+Policy templates -optional-search s3-Amazon S3 object read-only permissions-select
+create function
+add trigger
+search s3 and select it
+Bucket-s3/bucket1603-our above created bucket
+scroll down select the box of the I acknowledge using
+click addDown code
+import json
+import boto3
+def lambda_handler(event, context):
+    s3=boto3.client("s3")
+    bucketname=event["Records"][0]["s3"]["bucket"]["name"]
+    bucketobject=event["Records"][0]["s3"]["object"]["key"]
+    print(bucketname)
+    print(bucketobject)
+    response=s3.get_object(Bucket=bucketname,Key=bucketobject)
+    print(response)
+    data=response["Body"].read()
+    print(data)
+Remove before code and add above code 
+click deploy
+go to bucket tab
+create a text document name sample
+text-This is CLOUD INFRASTRUCTURE AND SERVICES
+upload it in the bucket tab browser
+drag and drop the text documnet and upload
+go to lambda tab 
+scroll down select monitor
+select  this View CloudWatch logs 
+new tab opens
+in the cloud watch tab scroll down in event log  events select ne that is preasent
+there output is shown our bucket name our documnet name and the data we have given in the documnet 
+delete-bucket,lambda function,search cloud watch log group 
+----------------------------------
+6/2/24-LAB7
+search dynmodb
+create table
+name-student
+partitionkey-id
+create table
+searcg iam
+click roles
+create role
+Trusted entity type:AWS Service
+UseCase:Lamdba
+next 
+search amazondynomodb full access
+next
+name role-dynamodbfull
+search lambda
+create function
+name-fun1
+python3.8
+usea an existion 
+role-dynoamobdfull
+create function
+search-apigateway
+restapi-build
+name:-test
+create method
+methodtype-post
+useast-1:-click one 
+create
+api gatway page scroll down click test
+test button slect
+go to lambda code page
+import boto3
+dynamodb=boto3.resource('dynamodb')
+table=dynamodb.Table('student')
+def lambda_handler(event, context):
+    table.put_item(Item=event)
+    return {
+        'statusCode': 200,
+        'message':"data creation success"
+    }
+
+add code and slect deploy
+
+GO TO TEST
+request body:-
+{
+    "id":"31603",
+    "name":“bhavya",
+    "age":18,
+    "address":"vijayawada"
+}
+click on test
+display in the box our detais
+----------------
+13/2/24-LAB8
+Go to service lambda function
+Create function 
+Lambda 1 name-function1
+Runtime-python3.8
+Role-new rolen with basic lambda
+Create function 
+Lambda 2 name-function2
+Runtime-python3.8
+Role-new rolen with basic lambda
+Create function 
+Search step function
+Get started
+Code
+Copy paste in group step function
+{
+  "Comment": "Orchestrate Lambda Functions",
+  "StartAt": "CallFirstLambda",
+  "States": {
+    "CallFirstLambda": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "{LAMBDA1-ARN}:$LATEST",
+        "Payload": {
+          "Input.$": "$"
+        }
+      },
+      "Next": "CallSecondLambda"
+    },
+    "CallSecondLambda": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "{LAMBDA2-ARN}:$LATEST",
+        "Payload": {
+          "Input.$": "$"
+        }
+      },
+      "End": true
+    }
+  }
+}
+
+Click create
+Status:succeed 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

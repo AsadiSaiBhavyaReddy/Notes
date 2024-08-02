@@ -1,0 +1,312 @@
+8Collection:
+1)List
+2)Tuple
+3)Set
+4)Dictionary
+The above four handle all types of values
+1)List->Modification,ordered-[]
+2)Tuple->Modification not allowed,ordered-()
+3)Set->Unordered-{}-In an ascending order int,string,float
+4)Dictionary->Key-Valyes pair-{}
+->The type is found by keyword type()-PT1
+->Reading the inputs through keyword.-PT2
+->The "clear" used to clear the command prompt
+PT3:
+List allow duplicaties,Tuple allows duplicates,set doesn't allow duplicates.
+List allows modification,Tuple doesn't allow modification,set doesn't allow modification
+Tuple&List are same as given ordered,set is unordered
+---------------------------------------------------------------------------------------------------
+PT4:8/7/23
+List types
+->Set is an unordered(Ascending order) in for loop and also print the types
+->After writing the foor loop for next step space is needed or appeared thst is called "indentation"
+->If we remove the indentation means it is outside the loop
+->for i in range(10):->to print range from o to
+->for i in range(5,10):->to print range 5 to 10
+->for i in range(1,10,2):->odd number(It can be written as the for(i=1;i<10;i=i+2)
+->for i in range(0,10,2):->even numbers
+->for i in range(20,10,-2):->used for decrement(i=20;i<10;i=i-2)->o/p:20,18,16,14,12
+->add evne numbers upto 50
+sum=0
+for i in range(0,51,2):
+    sum=sum+i
+print(sum)->o/p=650 sum is printed
+->l=[]=>l is empty list
+->append=elements will be add into the list
+ex;-'x' item is added to list l 
+l=l1+l2+l3->concatination of given value in a-PT5
+->To print the list in the reverse order then (print(l[::-1])) this is used
+->tuple is static no modifications
+------------------------------------------------------------------------------------------
+16/7/23
+Files in Python:A1,A2,A3,A4,A5
+r->read
+w->write->write the data to a file.Previous data in the file will be erased
+a->append->write the data at the end of the file
+dir clicking in command prompt is show to which file added
+->In append if we run for 10 times the program output in file  display 10 times
+Exception Hnadling:E1,E2
+Exceptin handiling is defined by the user and Built in Exceptions
+->handles the error in the program
+->Length of the string 'len' is used->E1
+
+->Program should not be stopped erroe should be handled
+->Try Exception->E1,Exception Example->E2
+----------------------------------------------------------------------------------
+C1:14/7/23
+Right side values keys and left side is values
+student={"Reg No":1,"Name:":"Smith","dept":"CSE","CGPA":"9.8"}
+->Values in Dictionary : ([1, 'Smith', 'CSE', '9.8'])
+->Key values in Dictionary :(['Reg No', 'Name:', 'dept', 'CGPA'])
+In Loop i values in student means reading key values so print(i)
+And we need to find the value in dictionary the we have to use the given name[i].
+->In python the type will be decided with given values.
+To copy a one program from an another
+then def function is used -m1,module(Run it in the module)
+->It can be written in any type-int,string,boolean and float
+---------------------------------------------------------------------------------
+19/7/23:OOPS IN PYTHON-class,class2,F12,F13,F15,F16
+->It is a collection of veriables-class,we can divide the class.
+->Define class in python keyword is "class"
+class name:Drawing
+outside space->indentation 
+class:
+->In Python indentation is used functionsclass,for loops,while loop,if statements etc
+->Indentation is used to represent the begin and end inside a block
+->In class function name starts with small letter
+->In class start with capital letter is boolean
+->The__init__()Function->It is a constructor
+->All classes have a function called__init__(),which is always executed when the class is being intiated
+->The __init__ method like constructors in C++ and Java.Constructors are used to initialize teh objects state.
+-.>For Every Method in class, The first argument should be self for every method in class.
+->Every method in class satrts with def __init__(self):
+Python Inheritane:-Inheritance allows us to define a class that inherits all the methosds and properties from anothe class
+->Parent class is the class is the class being inherited from,also base class
+->Child class is the class student inherits from another class, also called derived class
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+21/7/23
+Super()-F16
+Super class-FU1
+L1
+sub class can call individiual classes(Multiple inheritance)-division,addition,subtraction,multiplication-L2
+->pass in class there is nothing in it
+Method Overiding-O1-Class contating same function with different signature
+Method OverLoading-O2
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2/8/23
+mkdir flask-to create flask
+cd flask
+mkdir my project
+cd myproject
+mkdir venv
+cd venv
+->To install pip- pip install pipenu
+To activate the virtual envirmnt-pipenv shell
+in venv create a python file(P1)
+pip install flask
+venv-vertual envirment is isolated from python(sepearted from python)
+5/8/23----------------------------------------------------------------------------------------------------------------------------------------------------------
+from flask import Flask
+PROGRAM:-----------------------------
+app=Flask(__name__)
+@app.route('/')
+def home():
+    return "Welcome To KLU"
+if not __name__:
+    pass
+else:
+    app.run()
+----------------------------------------------------
+__name __is special veriable in python.It is default value is __main__
+app-it can wriiten as we wish 
+from flask import Flask
+app=Flask(__name__)
+@app.route('/')
+def home():
+    return "Welcome To KLU"
+@app.route("/CSE")
+def deptCSE():
+    return "Welcom To CSE Department"
+if __name__=="__main__":
+    app.run()
+->The above code to see the output we have to write what we have given in the route and in the url if we click for in this program (@app.route("/CSE"))-type/CSE to see the output Welcom To CSE Department.
+->app.run(debug=TRUE)-any chamges we have done will reflect on the browser
+->"Welcome To KLU"-If we do any changes in the text here alreay opened web page refresh it and changes will be shown
+-------------------------------------------------------------------------------------------
+18/8/23
+Namr []
+password []
+submit
+<tr>->Table row
+<td>->table column
+---------------------------------------------------------------------------------------------
+19/8/23
+type='text'name='nm WHICH THE GIVE SHOULD STORE IN ONE IT IS IN nm
+------------------------------------------------------------------------------------------------
+1/9/23-DIJANGO
+Use the folllowing commands to activate the shell
+1)pipenv shell(python-m pipenv shell)-use command to install dijango software
+2)pipe install dijango-to create a dijangi project,use the following commands
+3.dijango-admin start project mydjangoproj-to create dijango applicaton
+4)python manage.py-command to run django application
+5.python manage.py runserver(underline for runserver)
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+Warning: PowerShell detected that you might be using a screen reader and has disabled PSReadLine for compatibility purposes. If you want to re-enable it, run 'Import-Module PSReadLine'.
+
+PS C:\django_sec16> pipenv shell
+
+
+PS C:\django_sec16> python
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>> clear
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'clear' is not defined
+>>> ^Z
+
+PS C:\django_sec16> django-admin startproject mydjangoproj
+django-admin : The term 'django-admin' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ django-admin startproject mydjangoproj
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (django-admin:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+django-admin : The term 'django-admin' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ django-admin startproject mydjangoproj
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (django-admin:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\django_sec16> django-admin startproject myd
+django-admin : The term 'django-admin' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a 
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ django-admin startproject myd
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (django-admin:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\django_sec16> pip install Django
+Collecting Django
+  Obtaining dependency information for Django from https://files.pythonhosted.org/packages/7f/9e/fc6bab255ae10bc57fa2f65646eace3d5405fbb7f5678b90140052d1db0f/Django-4.2.4-py3-none-any.whl.metadata
+  Downloading Django-4.2.4-py3-none-any.whl.metadata (4.1 kB)
+Collecting asgiref<4,>=3.6.0 (from Django)
+  Obtaining dependency information for asgiref<4,>=3.6.0 from https://files.pythonhosted.org/packages/9b/80/b9051a4a07ad231558fcd8ffc89232711b4e618c15cb7a392a17384bbeef/asgiref-3.7.2-py3-none-any.whl.metadata
+  Downloading asgiref-3.7.2-py3-none-any.whl.metadata (9.2 kB)
+Collecting sqlparse>=0.3.1 (from Django)
+  Downloading sqlparse-0.4.4-py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.2/41.2 kB 491.2 kB/s eta 0:00:00
+Collecting tzdata (from Django)
+  Downloading tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 341.8/341.8 kB 623.3 kB/s eta 0:00:00
+Downloading Django-4.2.4-py3-none-any.whl (8.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 1.3 MB/s eta 0:00:00
+Downloading asgiref-3.7.2-py3-none-any.whl (24 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, Django
+Successfully installed Django-4.2.4 asgiref-3.7.2 sqlparse-0.4.4 tzdata-2023.3
+PS C:\django_sec16> django-admin startproject mydjangoproj
+PS C:\django_sec16> cd mydjangoproj
+PS C:\django_sec16\mydjangoproj> python manage.py startapp myapp
+PS C:\django_sec16\mydjangoproj> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 01, 2023 - 15:07:02
+Django version 4.2.4, using settings 'mydjangoproj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+[01/Sep/2023 15:07:05] "GET / HTTP/1.1" 200 10664
+Not Found: /favicon.ico
+[01/Sep/2023 15:07:05] "GET /favicon.ico HTTP/1.1" 404 2116
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+a python identifieer is a name used to identify a variable
+an identidier or variable starts with letter A OR OR_ cannot be a number 
+exit()  or ctrl+z to exit a command
+4 block space for indentation
+ x=5
+>>> y="sri"
+>>> z=10.0
+>>> print(x,y,z)
+5 sri 10.0
+>>> x=y=z="Orange"
+>>> print(x)
+Orange
+>>> print(y)
+Orange
+>>> print(z)
+Orange
+>>> x,y,z="Orane","Banana","Cherry"
+>>> print(x)
+Orane
+>>> print(y)
+Banana
+>>> print(z)
+Cherry
+>>> print('3+4')
+3+4
+-sep used as a separator
+>>> print(1,2,3,4,5,sep='*')
+1*2*3*4*5
+ >>>print(1,2,3,4,5,sep='*',end='&')
+1*2*3*4*5&
+print('one',end=' ')
+print('second')
+\t is tab- print('python in \tklu')
+o/p:python in       klu
+\n is new line- print('python in \nKLU')
+o/p:python in
+KLU
+\r is carriage return(replace first 6 characters)- print('python klu\r123456')
+o/p:123456 klu
+c='awe'
+def my func():
+    x='hii'
+    print("py is"+c)
+my func()
+ print("py is"+c)
+--------------------------------------
+x='ran'
+def myfun():
+    global x
+    x='fan'
+    print(x)
+myfun()
+print('py is'+x)
+---------------------------------------------------------
+print("Find List of databases")
+print(mongoclientob.list_database_names())
+mydb = mongoclientob['sec16']#creating a new database , mydb=name of the database object
+print("Find List of database after creating new database")
+print(mongoclientob.list_database_name())
+mydb=mongoclientob['sec16']
+mytable=mydb['student']
+mydict1={"RegNo":"17CSIT3107","Name":"Smith","cgpa":9.8}
+mytable.insert_one(mydict1)
+mydict2={"RegNo":"17CSIT3107","Name":"JOHN","cgpa":9.8}
+mytable.insert_one(mydict2)
+print("Find List of database after creating new database")
+
+
+
+
+
+
+
+

@@ -1,0 +1,637 @@
+9/12/23---
+Full stack:-
+Full stack is based on four key words
+1)design
+2)develop
+3)testing
+4)deployment 
+--------------------
+1)design:-
+frontend design-client side
+2)develop:-
+backend-server side 
+3)testing:-
+verification and validation of code
+4)deployment:-
+keeping our project in realtime or working our project in real time
+->All above are developed using a single programming language is called full stack.
+->Mern stack is a  fullstack by using javascript
+------------------------------
+design:-react
+develop:-node,express and mongo db
+testing:-js.lint
+deployment:-heroku,Digital version  occean,AWS.
+----------
+->To check the version of node go to the computer command prompt and type node --version
+->In computer command prompt and type node -is a command to establish an environment for javascript to be executed
+->node version >17 is preferable.
+(In PFSD:-pip-package intsaller for python-pip install django)
+->npm-node package manager-npm install recat -to configure packages related to java script libraries 
+->npx-node package execution or node package executor 
+[->git,git hub commands-ready next class]
+-------------------
+->Project to be created as title name is coucelling visitor management system[CVMS]
+modules-based on a functionality we need to divide project into parts that parts are called modules
+modules for cvms- 1)student modules,2)faculty modules,3)parent modules,4)appointments,5)report6)Appoinmemts7)Admin
+----------------
+In order to create new react client side applications
+install packages-npm install react
+(if else this--------npx install -g create-react-app appname(client))
+npx create-react-app appname(client)
+npx create-react-app my-app
+cd client
+npm start
+---------------------
+10/12/23
+modules have 3 characteristics.They are
+1)reusable,2)categorize &3)easy to fix errors
+-------------
+->create html css files to display the leatest news in US using the following desiging layout(tags)
+-heading[KL Radio],Dark Theme[any dark colour],with any font,with three paragraphs aligned in middle of the screen-coloum wise,click play-with a link video to be played[BBC]{iframe},with three images scrolling across the page{markq}.
+ctrl f5 for images
+->tizag.com,wwwscschools
+---------
+->react is a single page application-index.html
+->matrial.ui-https://mui.com/
+->In react applictaion we need to work with only 3 files-1)app.css,2)app.js,3)index.html
+->React works on component based application development model
+->components are visualize
+->componets in react can be created in 2 ways.They are 
+-1)Function based components
+-2)Class based component
+->In react currently we are wotking with function based component
+-Arrow functions-Functions without names used in Java script
+-extension of java script ----- .js
+-------In Vs code install in extension es7
+rafce-react arrow function component export
+Create 5 Components-Header,Footer,Student,Faculty,Visitor,Report,Parent
+->Javascript working with variable and constants
+rafce-react arrow function component export
+rcce-react class component export at end
+---------------------
+12/12/23-------
+m-mongodb-storage
+e-express-storage and mantainance of servers or (server-backends)
+r-react-user interface,clint interaction- appearance 
+n-node-to excute all three frontend,abckend and middleware -security
+->other than browser the java script only worked in node
+cntrl+shift+x-open plug in
+->web applications(kluniversity) are differ from web services(anything working 24hrs providing security-gmail,yahoo,outlook)
+->variables in java script can be crated in 3 ways:-
+1)const-declare a variable whose value is fixed
+2)var-will be always fixed across the block to change use let-crating and declration of the variables changes can only happen across the block
+3)let-to chage variables across the block-to declare the variables
+Object declaration:-
+->In java script a variable declared with a value surrounded by parantasis is treated as object declaration
+->tags:angle braces()
+->properties: or props:passing value to the function (we can use them as an argument)
+->context-any empty parantasis /{} is call context
+->attributes:attibutes are part of tags-Eample:-In img tag which as src which is attribute
+->fragmentation-any empty word or no word in angular braces ()
+->In react only one function should written one tag
+-------------------------
+COMMANDS:-
+->cd client
+-> npm start
+-------------------------
+after rafce:-
+
+import React from 'react'
+
+const Header = () => {
+  return (
+    <div>
+      <h1>Meet Us</h1>
+    </div>
+  )
+}
+
+export default Header
+--------------------------
+app.js
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+-delete the below <div> upto </div>
+-------------------------------
+13/12/23---------
+->The parent component->app.js
+->the is only one page-in that page has components
+*app-index.html or index.js->parent-app.js
+->In every component tag there is an attribute called style
+which takes any style attributes we want apply for 
+Example:<h1 style={{color:'Blue'}}>CVMS</h1>-this is called as in line styling
+->Create components in header component use image as logo for cvms project
+->download and store the kl logo use for header component-Hint:Remane and remember the extinction 
+-footer should display current date-Hint:date is a function to display the current date using the java script
+->Student component should display ur image along with your details with diffent fornt colours and font styles
+->Parent component should display parent details like name,age,relation,phone number in a table format-Hint:Use table tags from html-table consists of table-tr-row,th-table header
+----------------------------
+16/12/23
+->*Java script is not object oriented it is object base.
+->*object orented vs object base.
+->js is not programming language it is a scripted language
+->The most powerful thing in react is state-every component is associated with a state to hold the data and their modifications or changes which are automatically maintained by the react component.
+->The difference between function based components and class based components is
+state is part of a class based component which is declared inside constructor.
+->Where as in function based component the state is need to be created explicitly as a variable inside the function component.
+->States are easily transferred across the components like parent to child etc.Parent-app.js.
+->A data to the component passed as the property 
+->Component is an arrow function 
+->A component can hold the data in two ways
+1)Single object-one with different attributes
+2)Collection object-multiple values
+->(Array is the fixed length and collection is not.)
+->props is a key word used in component declaration to hold the data received from app component
+->props as a collection can use map function
+->In javascript map always carries objects as key and value pair,key is an index,value is an item
+ --->*npm install @mui/material @emotion/react @emotion/styled-in terminal install.
+----TASK:-
+->Use card layout or component from materialui to diaplay the student details(which we alredy displayed for a student component)
+->Create navbar (of our choice,card layout our choice) and assign components as the menu items
+Note:Every component of navbar is having a attribute called path -Example-/path-by using props-Hint:1)create a component acess a component card in student component with data as props.2)This data is passed through student component in app.js.
+-----------------------------
+19/12/23:-
+TASK:-1)Passing data through a component 
+2)Craeting arrays and access them with mapped function
+3)Render the array values into any ui components EX:-Cards
+TASK:-1
+1)Create or declare an argument/property for a component
+2)Access the variable within the varaiable
+3)Access the variable using parantasis to get the values
+4)Pass the value to the component as a attribute which will intern received by the component
+->Props is a keyword accept n number of keyword.
+-----------------------------
+20/12/23
+Syntaxes in JavaScript: 
+----------------------------- 
+// Function Declaration 
+function functionName(parameters) { 
+  // Code to be executed 
+  return result; // Optional return statement 
+} 
+ 
+// Function Expression (Anonymous function assigned to a variable) 
+let functionName = function(parameters) { 
+  // Code to be executed 
+  return result; // Optional return statement 
+}; 
+ 
+// Arrow Function (ES6 syntax) 
+let functionName = (parameters) => { 
+  // Code to be executed 
+  return result; // Optional return statement 
+}; 
+//Array Example 
+const arr1 = [ 
+    { key1: 1, key2: 'value 1' }, 
+    { key1: 2, key2: 'value 2' }, 
+    { key1: 3, key2: 'value 3' }, 
+  ]; 
+  //map function 
+   {items.map((index,value) => ( 
+          <li key={index}>{value.key2} 
+        ))}
+---------------------------
+->Use visitor component with either individual attribues-name,phoneno,relation,avaliabel/visitor time,purpose,studentid
+->use props to the component to display visitors details and pass it throught from the location attributes-6
+->Display the details of thr visitor Hint:Use contactus code for reference
+------------
+const arr1 = [ 
+    { empid: 1234, ,Name:'mm 'value 1' }, 
+    { key1: 2, key2: 'value 2' }, 
+    { key1: 3, key2: 'value 3' }, 
+  ]; 
+-------------------------
+create a  collection or arrays of counsellors components with alteast 5 consellor details as array or collection 
+each counseelor should have empid,empname,email.phoneno,no of students-use app function to render ina card layout in a horizontal way with each card displaying 5 different colors.
+-------------------------
+23/12/23
+Display login page using paper layout
+Navbar-Is a component to arrange or navigate across different components
+->As react is a single page application(SPA) all components must be arranged within AppBar
+AppBar-Is a child component of NavBar where we can add few components as Menu item
+NOTE:-In order to work with different Navbar Components using a new package of java script package called react-router-dom(dome- document object model)
+Browser Router-Is a component where we use browser as a container.Browser router is a container to hold routes.
+Routes-Is a parent component which hold individual route components
+Route-Is a  component which represent individual component and their path(/home) 
+->Navbars are having following child components-tipograpy-(writing skills) used to write on the components,logo,Menu item-It is of two types-1)responsive menu and 2)app menus"NOTE:Interview question:whether your website responsive or not?-Responsive system means it shouldwork in all devices without changing its features-ANSWER-All matrial ui components are responsive they looks similar in any format of devices,Link-In react use Link compoents instead of ancher tages or h tages
+->npm install react-router-dom
+npm i react-router-dom 
+------------------- 
+index.js 
+--------------------------------- 
+  <BrowserRouter> 
+  <center> 
+    <App /> 
+    </center> 
+   
+  </BrowserRouter> 
+-------------------------------------- 
+App.js 
+---------------------------------- 
+import {  Route,Routes } from 'react-router-dom'; 
+ 
+<Routes>  
+    <Route path="/home" element={<Home/>} /> 
+    <Route path="/about" element={<About/>} /> 
+    <Route path="/services" element={<Services/>} /> 
+    <Route path="/contact" element={<Contact/>} /> 
+    <Route path="/vhistory" element={<VisitingHistory/>} /> 
+    <Route path="/upload" element={<FileUpload/>} /> 
+    <Route path="/excel-data" element={<ExcelDataComponent/>} />   
+    </Routes>
+---------------------------------------------------------------------------------------------------------------------------------------------
+->select any navbar from materialui  or reactbootstrap use them in your app or header and modify according to cvms and apply above code snipet.
+---------------------------------------------------------------------------
+26/12/23
+->1)Create nav bar,2)Create appointmnet component or form using materailui by the reference of the login form component.
+name of parent,gender,age,phoneno,email(optional),studentid,studentname,department,purpose of visit,preferable  Date and preferable Time,proof-upload pdf or document and submit button-all inpaper layout.
+----------------------------------------------------------------------------------------
+import React from 'react'  
+import { Grid,Paper, Avatar, TextField, Button, Typography,Link } from '@material-ui/core'  
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';  
+import FormControlLabel from '@material-ui/core/FormControlLabel';  
+import Checkbox from '@material-ui/core/Checkbox';  
+const Login=()=>{  
+  
+    const paperStyle={padding :20,height:'70vh',width:280, margin:"20px auto"}  
+    const avatarStyle={backgroundColor:'#1bbd7e'}  
+    const btnstyle={margin:'8px 0'}  
+    return(  
+        <Grid>  
+            <Paper elevation={10} style={paperStyle}>  
+                <Grid align='center'>  
+                     <Avatar style={avatarStyle}><LockOutlinedIcon/></Avatar>  
+                    <h2>Sign In</h2>  
+                </Grid>  
+                <TextField label='Username' placeholder='Enter username' fullWidth required/>  
+                <TextField label='Password' placeholder='Enter password' type='password' fullWidth required/>  
+                <FormControlLabel  
+                    control={  
+                    <Checkbox  
+                        name="checkedB"  
+                        color="primary"  
+                    />  
+                    }  
+                    label="Remember me"  
+                 />  
+                <Button type='submit' color='primary' variant="contained" style={btnstyle} fullWidth>Sign in</Button>  
+                <Typography >  
+                     <Link href="#" >  
+                        Forgot password ?  
+                </Link>  
+                </Typography>  
+                <Typography > Do you have an account ?  
+                     <Link href="#" >  
+                        Sign Up   
+                </Link>  
+                </Typography>  
+            </Paper>  
+        </Grid>  
+    )  
+}  
+  
+export default Login
+ ----------------------------------------------------
+Event handling or form data
+->In react the compoenent state or data can be modified using event handling 
+->Some of event handling approaches are onClick ,onChange,onSubmit,isValid,isChange,mouseMove,mouseClick,"e is a variable or event variable which stores all your event actions","event args is a variable whcih holds multiple events and their values especially form data".
+->Event is an action or functions to perform,events must be called internally in function.(event-internally calls function).
+------------>Learn how to use event habdling or form data handling in app.js
+----------------------------------------------------------------------------------------------------------------------
+27/12/23-
+import React, { useState } from 'react'; 
+ 
+const TAF = () => { 
+  const [items, setItems] = useState([ 
+    { id: 1, name: 'Item 1', category: 'A' }, 
+    { id: 2, name: 'Item 2', category: 'B' }, 
+    { id: 3, name: 'Item 3', category: 'A' }, 
+    // ... other items 
+  ]); 
+ 
+  const [filteredItems, setFilteredItems] = useState([]); 
+ 
+  // Filter function 
+  const filterItemsByCategory = (category) => { 
+    const filtered = items.filter(item => item.category === category); 
+    setFilteredItems(filtered); 
+  }; 
+ 
+  return ( 
+    <div> 
+      <button onClick={() => filterItemsByCategory('A')}> 
+        Filter Category A 
+      </button> 
+      <button onClick={() => filterItemsByCategory('B')}> 
+        Filter Category B 
+      </button> 
+      <button onClick={() => setFilteredItems([])}> 
+        Clear Filters 
+      </button> 
+      <ul> 
+        {filteredItems.length > 0 ? ( 
+          filteredItems.map(item => ( 
+            <li key={item.id}>{item.name} - {item.category}</li> 
+          )) 
+        ) : ( 
+          items.map(item => ( 
+            <li key={item.id}>{item.name} - {item.category}</li> 
+          )) 
+        )} 
+      </ul> 
+    </div> 
+  ); 
+}; 
+ 
+export default TAF;
+-------------------------------------------------
+Create a new compnent which will filter an array of visitors like name purpoae time date of visit
+Create 5 collections at least arrays 
+Filter the data based on type of visitorHINT:there should be 2 visitors,3parents use card /tablel/order list display
+-----------
+30/12/23-------------
+AXCIOUS,ASSERTS
+--------------------
+2/1/24------
+->promise:-Is a value which will be varified irrespective of data as a proxy(on behalf of)
+-Is used for asynchronous communication across various data forms.
+-Every promise have three stages(or)values-fulfillment,pending/passed,rejection
+->asynchronous/async:-*"node applications are asynchronous"
+->node works  with sigle thread approach
+->(single thread)multi user,prallel processing,multi task,synchronous
+->node support single thread due to this node applications are slow for thefirst intiation
+->asynchronous application and their requests are processed using promising 
+->async is afunction passed before getting the response
+->await:-Is afunction passed before getting the response
+->hooks:-Are the funnctions added to an another function to track the component values or states and their side effects
+-useState:-Is an array it will take two values 1-variable,2-function associated with the vaiable
+->useEffect:-Is an array which is takes 2 variables 1-it will change its values/side effects of a variable and their result
+->API:-Application Programming Interface used to retrive data in JSON format(JSON-Is dictionaries of dictionary)
+-Can perfprm request and responses using end points,Examples:-request methods can be GET,POST,PUT,PATCH,DELETE
+GET:-Is a method to retrive the data as a response
+POST:-(POST itself is placing in server)provide the data to the server
+PUT,PATCH:-Used for modification
+DELETE:-Delete data or response from the servers
+->axios;-Is a package used to fetch the data either internal or external data using url or uri
+-------------------------------------------
+3/1/24
+TASK:-
+Create a component which will display github user details from the using-
+Working with github API 
+working with axios 
+use hooks-useState and useEffect
+trycatch-try is a block- port there is a change of getting runtime error,catch -using exception mechanisum when ever we get a error for try
+working with data
+---------git hub-settings-developer settings-personal acess token-token(classic)-and drop down side generate slect classic-github password-,user check box Note-reactdemo-key:-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
+import React, { useState, useEffect } from 'react'; 
+import axios from 'axios'; 
+ 
+const MyComponent = () => { 
+  const [data, setData] = useState(null); 
+  const [error, setError] = useState(null); 
+ 
+  useEffect(() => { 
+    const fetchData = async () => { 
+      try { 
+        const response = await axios.get('https://api.github.com/users/'); 
+        setData(response.data); 
+      } catch (error) { 
+        setError(error); 
+      } 
+    }; 
+ 
+    fetchData(); 
+  }, []); 
+ 
+  return ( 
+    <div> 
+      {error && <p>Error: {error.message}</p>} 
+      {data ? ( 
+        <div> 
+          {/* Render the fetched data */} 
+          <h1>My Data</h1> 
+          <pre>{JSON.stringify(data, null, 2)}</pre> 
+        </div> 
+      ) : ( 
+        <p>Loading...</p> 
+      )} 
+    </div> 
+  ); 
+}; 
+ 
+export default MyComponent;
+
+Display the user name and their emails in either their unordered list or cards
+Use github access key use git hub API use material ui  card or unordered list by rendering inside cards
+use apropriate email id's for a specific user
+--------------------
+6/1/24:-
+npm install axios
+From handling in react using event handlers
+Example:onClick,onChange,onSubmit,onSelect,isSelect etc
+--------------------------
+9/1/24:-
+// ParentComponent.js 
+   import React, { useState } from 'react'; 
+   import ChildComponent from './ChildComponent'; 
+    
+   const ParentComponent = () => { 
+     const [formData, setFormData] = useState({ 
+       name: '', 
+       email: '' 
+     }); 
+ 
+     // Function to handle form changes 
+     const handleFormChange = (e) => { 
+       setFormData({ ...formData, [e.target.name]: e.target.value }); 
+     }; 
+ 
+     return ( 
+       <div> 
+         <form> 
+           <input 
+             type="text" 
+             name="name" 
+             value={formData.name} 
+             onChange={handleFormChange} 
+           /> 
+           <input 
+             type="email" 
+             name="email" 
+             value={formData.email} 
+             onChange={handleFormChange} 
+           /> 
+           {/* ... other form fields ... */} 
+         </form> 
+         <ChildComponent formData={formData} /> 
+       </div> 
+     ); 
+   }; 
+ 
+   export default ParentComponent;
+->{}-object
+->({ ...formData})-...-It will not distrub the existing values
+->[]=>It is a collection of (key, value) pair
+
+----------------------------------
+->*Handelling data in javascript is different from handling data in react
+->In javascript data is handled through DOME object-(DOME-document object model)
+->DOME is an enegine which is used to process that request   inside a browser.
+->Node is an environmental virtual DOME for react js
+->In order to access the data through  javascript it uses DOME object with methods like getElementByEd,getElementByName,getElemntByHeader etc.
+->Handelling of data in react is in two ways:
+1)Controlled model
+2)Uncontrolled model
+ Controlled model-useState is the best example 
+Uncontrolled use- useref is a hook to work with uncontrolled handling of data
+->We can implement farmhandling in controlled manner either one after other 
+1)From Parent component to Child component
+2)Within Sibling components
+3)*Context paths
+-------------------------------
+TASK1:-Use LoginIn compoent after submition it shold display home component with what ever entered i n username and password in an unordered lsit
+TASK2:-Use the same code for appointment form or component after submission it should display Create appoinment details in a table manner on submit the dtails must be displayed ina  new component with a tabular format
+Create a appoinment details componet form details of the appoinmnet of the appointmnet form.
+------------------------------------
+20/1/24-----------
+Data:-Data is having two characteristics-
+->Meaningful and Countable
+EXAMPLE:-Student data,Product data,Event data,Not:-stars
+Information:-Finding insides of data is called as information
+EXAMPLE:-100,101,158,196,58,32,11,210,10-Score,Speed,Rank.
+Database:-Collection of data.Which follows two rules.They are
+1)FAST and 2)ACCURATE
+DBMS is a software to manage database
+EXAMPLE:-MONGODB,POSTSQL,ORACLE&FIREWAYS
+DBMS types:-rdbms,oodbms,orm-object relational mapping
+->MONGODB supports both oodbms and orm model
+->momgodb is based on collection model or mongodb holds data in format of collection in rdbms in format table.
+->Collection is a combination of JSON format[javascript object notation].
+->JSON is of dictionaries of dictionary consists of keys and values
+what is syntax to create table?
+create table name
+->MONGODB or databases can be accessed in three ways
+1)Command Prompt
+2)Atlas
+3)Compass
+Step1:-Create a directory in CVMS which is beside client
+Step2:-Name of the directory with Server
+Step3:-Navigate to Server folder in terminal and install following packages
+Install-mongoes,express,cors,nodenon,.env
+Step4:-In terminal type the command npm init
+Step5:-Click enter and press Y
+Step6:-Create a new file inside a server directory with the name as index.js
+->mvc-m---model v---view c---controller 
+->m---In mernstack model is created through mongodb
+->v---The frontend and UI is created by using react js "c"
+->c---Backend routing conctivity with model and views is controlled by using express,cors and their routing methods
+->Install--- type cors---cross origin resourde sharing
+->To test them we use postman download postman software and signin
+----------------------------------------
+6/2/24-
+->Display data from server without database counsellor,student and visitor to be displayed in the frontend with a navbar with menu item view(dropdown)
+(HINT:- Use the routes-ap.grt('/counsellors') use a client side pacakage.Json proxy:3500) 
+student-name,course&cgpa
+counsellor-empid,des,name
+visitor-id,name,data(current data)-display mm-yy-dd(12hour format -time displat AM &PM-time zone)
+create folders-structure for server
+create folders in server directory-models,public-create css folder-images folder,config,routers,controllers,utils,middleware
+create file in server-.env,.ignore
+--------------------------
+7/2/24
+------------------------
+17/2/24
+npm i mongobd
+npm install dotenv
+npm install dataenv
+npm install mongoose
+npm install express
+npm install nodemon
+------------------------------------
+2/3/24:
+->LINK:-https://jwt.io/
+Authentication:- Comibination of two things:-Verifications and Validation of credentials.
+Autherization:-Authentications with permissions is called Autherize.
+Authenticated users only autherized with permissions.
+Privacy:-Is safe gaurd of individual data or information.
+Security:-Is an external aspect to save your data.
+Protection:- Is an Internal aspect of data and information.
+Credentials:-
+Roles:-Specified permissions or designated user with permisssion
+Ex:-For CVMS-admin role,visitor role,counsellor role,student role
+Permissions:-Specific actions or operations on a data are said to be pernissions
+***Cookies:-Clients information stroed or saved inside the browser.It is temporary data.Each browser can store cookies of data 20kb only.
+Ex:-username,password and history.called json wehich are stored in server.
+->In mern stack in oder to establish role based authentication system and maintaning the sessions of clients at server we use a package or a library called jsonwebtaken
+->jsonwebtoken is a three part webtoken 1)sign,2)payload,3)header
+->This token is not stored at server.
+->Token is created by using a secrite key.
+->Based on the secrect key by the sever it will generate a token and a sign inside a token.
+->In oreder to work with jsontoken we need two things they are encodeing and decoding.
+->Encodeing:-create a jwt.
+->Decoding:-verify and validate jwt.
+->header is a combination of user and algorithm.
+->payload is original data.
+->Sign is created by the combination of secret key and hased payload.
+->Secret key only resides in server.‎
+NOTE:-
+->Take a input of 4 digit number Ex:-1234
+->Add 8 individula digits of  4 digits EX:- 9 0 1 2
+->Swap with 1st postion 3rd and 2nd to 4th position.Ex:-1 2 9 0
+->Take this 4 digit number do the reverse the process and give original. Ex:- 1-8 
+TASK FOR O GRADE:-
+->Implement jwd login logout and restrict pages using jwt role based authentication system
+-/Create a login and logut componet
+->Create and pages(student counellor )
+->U cannot acess directly students route without logged in(either studnet or counsellor not visitor)
+STEP1:-Install the package at server side jsonwebtaoken
+STEP2:-Create a route under routes as auth.js 
+STEP3:-auth.js contsist of two routes login and logout
+STEP4:-Create routes and contrllers accordingly
+STEP5:-Create model called as user.js
+STEP6:-In controller.js use the controllers by jwt.generate and jwt.signed and jwt.decode
+NOTE:-Create a secret key anf mention a .env file
+STEP7:-Create login logout attect this routes
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+19/3/24:-------
+redux is a way to store state management in centralized basis for an entire application
+1.store
+2.action
+3.reducer
+4.useReducer
+It is an unidirectional stae management tool
+->redux is used in client side specifically for react for working with states
+->props is a compoent based state which can be changes using useState and useEffect
+->Application wise we use redux
+->States of application are stored inside of store of redux
+->action:-event when ever there is an change in the state 
+->reducer will effect entire appplication after the changes in store
+->useRducer it is an hook applied for the entire application
+->redux is not sutable for complex application
+->hooks vs redux
+
+

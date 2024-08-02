@@ -1,0 +1,37 @@
+ npx create-react-app client
+server-npm init
+sever-npm i express cors
+server-npm i nodemon
+client-npm install @mui/material @emotion/react @emotion/styled
+client-npm i @mui/icons-material
+client-npm i axios
+server-npm i mongodb
+server-npm i bcrypt
+clinet-npm i redux
+client-npm i react-router-dom 
+client-npm i nodemailer
+client- npm i sweetalert2
+server-npm i mongoose
+client-npm install xlsx
+--------------------
+node index.json
+"dev" : "nodemon --watch index.js"
+npm install @mui/material @emotion/react @emotion/styled
+kzlq mexs nooy pbfp
+--------------------
+git init
+git add .
+git commit -m "first commit"
+ git branch -M main
+ git remote add origin https://github.com/AsadiSaiBhavyaReddy/demo.git
+ git push -u origin main
+------------------------------
+create a folder in c-drive
+In header after the path selection created in c drive add name  -/name
+create
+pip install pipenv
+pip install Django
+django-admin startproject <projectname>
+python manage.py runserver
+django-admin startapp <adminapp>
+----------------------
